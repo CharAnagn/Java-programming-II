@@ -10,16 +10,16 @@ public class AverageOfPositiveNumbers {
         int count = 0;
 
         while (true) {
-          Integer userInput = Integer.valueOf(scanner.nextLine());
+            Integer userInput = Integer.valueOf(scanner.nextLine());
 
-          if (userInput == 0) {
-              break;
-          }
+            if (userInput == 0) {
+                break;
+            }
 
-          if (userInput > 0) {
-              sum += userInput;
-              count++;
-          }
+            if (userInput > 0) {
+                sum += userInput;
+                count++;
+            }
         }
 
         if (sum > 0) {
