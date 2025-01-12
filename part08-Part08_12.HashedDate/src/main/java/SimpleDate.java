@@ -51,4 +51,15 @@ public class SimpleDate {
         return this.year - other.year - yearRemoved;
     }
 
+
+    @Override
+    public int hashCode() {
+        // Use a prime number to multiply fields
+        int hash = 17;
+        hash = 31 * hash + this.day;
+        hash = 31 * hash + this.month;
+        hash = 31 * hash + this.year;
+        return hash;
+    }
+
 }
