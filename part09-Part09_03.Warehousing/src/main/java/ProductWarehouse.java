@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ProductWarehouse extends Warehouse {
     private String productName; // Only product name is stored here
-   
+    private Integer number;
 
     public ProductWarehouse(String productName, double capacity) {
         super(capacity); // Initialize capacity in the superclass
