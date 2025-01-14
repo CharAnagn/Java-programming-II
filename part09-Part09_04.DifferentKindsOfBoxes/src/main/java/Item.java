@@ -1,3 +1,4 @@
+import java.util.Objects;
 
 public class Item {
 
@@ -21,4 +22,24 @@ public class Item {
         return weight;
     }
 
+    @Override
+    public boolean equals(Object comparedItem) {
+        if (this == comparedItem) {
+            return true;
+        }
+
+        if (comparedItem == null || getClass() != comparedItem.getClass()) {
+            return false;
+        }
+
+        Item other = (Item) comparedItem;
+
+        return other.name == this.name;
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.name);
+    }
 }
